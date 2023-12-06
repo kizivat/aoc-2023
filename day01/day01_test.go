@@ -11,8 +11,10 @@ func TestPart1(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Could not load data. %v", err)
 	}
-	actual := Part1(data)
+	actual := Parts{}.Part1(data)
+
 	var expected uint32 = 142
+
 	if actual != expected {
 		t.Fatalf("Result was incorrect, expected: %d, actual: %d.", expected, actual)
 	}
@@ -23,8 +25,10 @@ func TestPart2(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Could not load data. %v", err)
 	}
-	actual := Part2(data)
+	actual := Parts{}.Part2(data)
+
 	var expected uint32 = 281
+
 	if actual != expected {
 		t.Fatalf("Result was incorrect, expected: %d, actual: %d.", expected, actual)
 	}
